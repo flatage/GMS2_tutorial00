@@ -1,0 +1,2 @@
+/// @description Bullet cooldown alarm
+
