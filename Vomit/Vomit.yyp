@@ -114,7 +114,7 @@
             "Key": "816a0b90-89cd-4057-9a1b-97484efe587d",
             "Value": {
                 "id": "e1a8dbdb-9b74-4efb-9b29-bd5686839937",
-                "resourcePath": "sprites\\spr_bullet1\\spr_bullet1.yy",
+                "resourcePath": "sprites\\spr_enemy_bullet\\spr_enemy_bullet.yy",
                 "resourceType": "GMSprite"
             }
         },

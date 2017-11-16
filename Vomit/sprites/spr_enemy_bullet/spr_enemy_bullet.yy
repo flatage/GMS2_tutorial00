@@ -2,7 +2,7 @@
     "id": "816a0b90-89cd-4057-9a1b-97484efe587d",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_bullet1",
+    "name": "spr_enemy_bullet",
     "For3D": false,
     "HTile": false,
     "VTile": false,
