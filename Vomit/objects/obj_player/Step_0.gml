@@ -1,5 +1,10 @@
 /// @description Player Movement
 
+//ライフが0になったら自分を消す
+if health_ <= 0 {
+	instance_destroy();
+}
+
 var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 //平行移動チェック

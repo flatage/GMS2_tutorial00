@@ -10,7 +10,7 @@ if instance_exists(obj_player){
 
 	// 弾を生成
 	if alarm[0] <= 0 {
-		var dir = point_direction(x, y, obj_player.x, obj_player.y-16);	//自分とプレイヤーキャラの角度を見る
+		var dir = point_direction(x, y, obj_player.x, obj_player.y-obj_player.sprite_height/2);	//自分とプレイヤーキャラの角度を見る
 
 		// lengthdir関数は回転のオフセット値を返す便利な関数
 		var x_offset = lengthdir_x(20, dir);
