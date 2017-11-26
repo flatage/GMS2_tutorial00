@@ -27,7 +27,7 @@ if !place_meeting(x, y+1, obj_solid) {
 }
 
 
-move();
+move(hspeed_, vspeed_);
 
 // Check for landing
 if place_meeting(x, y+1, obj_solid) && !place_meeting(x, yprevious+1, obj_solid){	//オブジェクトに接触した && 直前のフレームで接触していなかった（=着地時のみ通る）

@@ -7,10 +7,10 @@ if instance_exists(obj_player) {
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
 	hspeed_ = lengthdir_x(speed_, dir);
 	vspeed_ = lengthdir_y(speed_, dir);
-	move();
+	move(hspeed_, vspeed_);
 
 	// Push force
-	move_push();
+	move(hspeed_push_,vspeed_push_);
 	//もし他のエネミーオブジェクトとぶつかっていなければ
 	if !place_meeting(x,y, obj_enemy){
 		hspeed_push_ = lerp(hspeed_push_, 0, 0.1);

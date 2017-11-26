@@ -1,6 +1,6 @@
 /// @description Hit State
 // Push force
-move_push();
+move(hspeed_push, vspeed_push);
 hspeed_push_ = lerp(hspeed_push_, 0, 0.1);
 vspeed_push_ = lerp(vspeed_push_, 0, 0.1);
 
