@@ -1,28 +1,26 @@
-/// @param hspeed
-/// @param vspeed
-var hspd = argument0;
-var vspd = argument1;
+/// @param speed
+var speed_ = argument0;		//speed_は配列の変数
 
 // 横方向のヒットチェック
-if place_meeting(x + hspd, y, obj_solid) {
+if place_meeting(x + speed_[h], y, obj_solid) {
 	// sign関数（引数が+なら1, -なら-1, 0なら0を返す）を使って微調整
-	while !place_meeting(x + sign(hspd), y, obj_solid) {
-		x += sign(hspd);	
+	while !place_meeting(x + sign(speed_[h]), y, obj_solid) {
+		x += sign(speed_[h]);	
 	}
-	hspd = 0; 
+	speed_[@ h] = 0; 
 }
 
 // x移動
-x += hspd;
+x += speed_[h];
 
 // 縦方向のヒットチェック
-if place_meeting(x, y + vspd, obj_solid) {
+if place_meeting(x, y + speed_[v], obj_solid) {
 	// sign関数（引数が+なら1, -なら-1, 0なら0を返す）を使って微調整
-	while !place_meeting(x, y+sign(vspd), obj_solid) {
-		y += sign(vspd);	
+	while !place_meeting(x, y+sign(speed_[v]), obj_solid) {
+		y += sign(speed_[v]);	
 	}
-	vspd = 0;
+	speed_[@ v] = 0;
 }
 
 // y移動
-y += vspd;
+y += speed_[v];

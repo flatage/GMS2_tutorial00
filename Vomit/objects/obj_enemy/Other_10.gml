@@ -5,16 +5,16 @@
 if instance_exists(obj_player) {
 	// 自分とプレイヤーの角度を取る
 	var dir = point_direction(x, y, obj_player.x, obj_player.y);
-	hspeed_ = lengthdir_x(speed_, dir);
-	vspeed_ = lengthdir_y(speed_, dir);
-	move(hspeed_, vspeed_);
+	speed_[h] = lengthdir_x(max_speed_, dir);
+	speed_[v] = lengthdir_y(max_speed_, dir);
+	move(speed_);
 
 	// Push force
-	move(hspeed_push_,vspeed_push_);
+	move(speed_push_);
 	//もし他のエネミーオブジェクトとぶつかっていなければ
 	if !place_meeting(x,y, obj_enemy){
-		hspeed_push_ = lerp(hspeed_push_, 0, 0.1);
-		vspeed_push_ = lerp(vspeed_push_, 0, 0.1);
+		speed_push_[h] = lerp(speed_push_[h], 0, 0.1);
+		speed_push_[v] = lerp(speed_push_[v], 0, 0.1);
 	}
 
 	// Death
