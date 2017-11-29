@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "5953e02a-55f2-44db-a51b-f1a0d7eaa033",
+            "Value": {
+                "id": "1c254ece-47d5-41a4-880d-1e507c080506",
+                "resourcePath": "tilesets\\tile_autotile\\tile_autotile.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "5f16a936-6812-4c15-a237-7c58a0c7412b",
             "Value": {
                 "id": "fde4cb3a-63b2-4045-959b-4396186b537b",
@@ -252,6 +260,14 @@
                 "id": "5c9f2866-3383-4c8d-9b70-d1bdae724cec",
                 "resourcePath": "objects\\obj_enemy\\obj_enemy.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e80d7911-bebf-4929-9f88-f7b392d3c7d9",
+            "Value": {
+                "id": "2085eaa9-017c-40d6-9088-dc3252457716",
+                "resourcePath": "sprites\\spr_autotile\\spr_autotile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -21,3 +21,7 @@ alarm[0] = bullet_cooldown_;
 // Scale variable
 x_scale_ = image_xscale;
 y_scale_ = image_yscale;
+
+// Solidsレイヤーを非表示に
+var solid_layer = layer_get_id("Solids");
+layer_set_visible(solid_layer, debug_mode);		//debug_modeだと、デバッグモードでのみtrueになる
